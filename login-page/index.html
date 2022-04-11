@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <style>
+        .wrapper{
+            width: 420px;
+            height: 320px;
+            background-color:yellowgreen;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .wrapper .btn-wrapper{
+            width: 350px;
+            height: 250px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 30px;
+        }
+    
+        .container {
+            margin-top: 25px;
+        }
+
+        #btn-input{
+            width: 250px;
+            height: 30px;
+            margin: 10px 0px;
+            border-style: none;
+            padding-left: 2vh;
+            background-color:lavender;
+        }
+
+        .btn-submit{
+            background-color:yellowgreen;
+            width: 270px;
+            height: 35px;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover{
+            background-color:rgb(183, 201, 148);
+        }
+
+        .wrapper .btn-wrapper p {
+            font-size: 1.8vh;
+        }
+
+        .wrapper .btn-wrapper .sign-up {
+            color: yellowgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="btn-wrapper">
+            <div class="container">
+                <input type="text" placeholder="Useraname" name="username" id="btn-input">
+                <input type="password" name="password" id="btn-input" placeholder="Password">
+                <button type="submit" class= "btn-submit" id="btn">Login</button>
+                <p>Not registered? <a href="" class="sign-up">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
