@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.header {
+			padding: 20px;
+			text-align: center;
+			background: #f499f4;
+			margin-top: 20px;
+		}
+
+		.leftcolumn {   
+			float: left;
+			width: 33%;
+			background-color: #dedede;
+			padding: 20px;
+		}
+		.centercolumn {   
+			float: left;
+			width: 33%;
+			background-color: #ffffff;
+			padding: 20px;
+		}
+		.rightcolumn {
+			float: left;
+			width: 34%;
+			background-color: #f1f199;
+			padding: 20px;
+		}
+		.footer{
+			padding: 20px;
+			text-align: center;
+			background: #898989;
+			margin-top: 20px;
+		}
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .centercolumn, .rightcolumn {   
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		</style>
+	</head>
+<body>
+
+<div class="row">
+  <div class="header">
+	Atas
+  </div>
+  
+  <div class="leftcolumn">
+	kiri
+  </div>
+  
+  <div class="centercolumn">
+	tengah
+  </div>
+  
+  <div class="rightcolumn">
+	kanan
+  </div>
+  
+  <div class="footer">
+	bawah
+  </div>
+</div>  
+
+</body>
+</html>

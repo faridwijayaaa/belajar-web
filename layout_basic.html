@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouting Basic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+			background: #f1f1f1;
+        }
+
+        p {
+            margin: 0vh 0vh;
+        }
+    
+        .column-mid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div .column{
+            padding: 4vh;
+            width: 33.3%;
+        }
+
+        .lower{
+            padding-bottom: 4vh;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 800px) {
+            div .column{
+                width: 100%;
+                padding: 0;
+            }
+
+            .column-mid{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+        <p style="background-color: rgb(173, 204, 142); padding: 4vh 0vh; text-align: center">Atas</p>
+        <div class="column-mid">
+            <p style="background-color:rgb(220, 161, 140)" class="column">Kiri</p>
+            <p style="background-color: rgb(86, 93, 75);" class="column">Tengah</p>
+            <p style="background-color: rgb(160, 198, 237);" class="column">Kanan</p>
+        </div>
+        <p style="background-color: rgb(237, 190, 237);" class="lower">Bawah</p>
+    </div>
+</body>
+</html>
