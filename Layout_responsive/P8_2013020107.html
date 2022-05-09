@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(30, 206, 147);
+        }
+
+        section {
+            text-align: center; /** text rata tengah **/
+            width: 100%; /** pembungkus semua container **/
+        }
+
+        header, .wrapper, footer{
+            border: 1px solid black; /** memberi border **/
+            margin: 10px 0px;
+            background-color:aquamarine;
+        }
+
+        .container { /** container content selain header dan footer **/
+            display: flex; /** membuat content inline atau berjejeran **/
+            align-items: center; 
+            flex-wrap: wrap; /** dapat mengarahkan content berjejeran ke line baru **/
+            justify-content: space-around; /** rata tengah content **/
+        }
+        
+        .wrapper {
+            position: relative;
+            padding: 20px;
+        }
+
+        .a, .b, .c { 
+            margin-top: 10px;
+            width: 33%;
+        }
+
+        .d, .e {
+            width: 50%;
+        }
+
+
+        @media (max-width: 800px) {
+            .container {
+                display: block; /** membuat display menjadi satuan **/
+            }
+
+            .wrapper {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <Section>
+        <header>
+            <h4>Header</h4>
+        </header>
+
+        <div class="container">
+            <div class="wrapper a">A</div>  
+            <div class="wrapper b">B</div>
+            <div class="wrapper c">C</div>
+            <div class="wrapper d">D</div>
+            <div class="wrapper e">E</div>
+        </div>
+
+        <footer>
+            <h4>Footer</h4>
+        </footer>
+    </Section>
+</body>
+</html>
