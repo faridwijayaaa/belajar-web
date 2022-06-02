@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel input</title>
+</head>
+<body>
+    
+    <script>
+        var input_tbl = prompt('Masukkan jumlah tabel')
+        
+        for (i = 0; i < input_tbl; i++){
+            let tabel = "";
+            var rows = prompt('Masukan jumlah row pada tabel ke ' + (i + 1))
+            var cols = prompt('Masukan jumlah column pada tabel ke ' + (i + 1))
+            for (k = 0; k < rows; k++){
+                tabel += '<tr>';
+                    
+                    for (j = 0; j < cols; j++){
+                        tabel += '<td>' + (j + 1) + '</td>';
+                    }
+                    tabel += '</tr>'             
+                }
+            
+                document.write('<table border="1">' + tabel +'</table>' + '</br>')
+            };
+        </script>
+</body>
+</html>

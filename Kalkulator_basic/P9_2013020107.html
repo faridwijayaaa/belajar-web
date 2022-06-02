@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    
+    <section>
+        <form name="fkalkulator">
+            <h1>Kalkulator Sederhana</h1>
+            <p>Bilangan Pertama: </p>
+            <input type="number" name="bil1" size="15">
+            <p>Bilangan Kedua: </p>
+            <input type="number" name="bil2" size="15">
+            
+
+            <input type="button" value="+" onclick="jumlah()">
+            <input type="button" value="-" onclick="kurang()">
+            <input type="button" value="/" onclick="bagi()">
+            <input type="button" value="*" onclick="kali()">
+
+            <p>Hasil: <span id="hasil"></span></p>
+            <button type="reset">RESET</button>
+
+        </form>
+    </section>
+
+    <script type="text/javascript">
+        function jumlah() {
+            var bil1 = parseFloat(document.fkalkulator.bil1.value);
+            var bil2 = parseFloat(document.fkalkulator.bil2.value);
+            var hasil = bil1 + bil2;
+
+            document.getElementById("hasil").innerHTML=hasil;
+        }
+
+        function kurang() {
+            var bil1 = parseFloat(document.fkalkulator.bil1.value);
+            var bil2 = parseFloat(document.fkalkulator.bil2.value);
+            var hasil = bil1 - bil2;
+
+            document.getElementById("hasil").innerHTML=hasil;
+        }
+
+        function bagi() {
+            var bil1 = parseFloat(document.fkalkulator.bil1.value);
+            var bil2 = parseFloat(document.fkalkulator.bil2.value);
+            var hasil = bil1 / bil2;
+
+            document.getElementById("hasil").innerHTML=hasil;
+        }
+
+        function kali() {
+            var bil1 = parseFloat(document.fkalkulator.bil1.value);
+            var bil2 = parseFloat(document.fkalkulator.bil2.value);
+            var hasil = bil1 * bil2;
+            
+            document.getElementById("hasil").innerHTML=hasil;
+        }
+
+    </script>
+</body>
+</html>
