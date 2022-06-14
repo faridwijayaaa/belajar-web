@@ -26,16 +26,23 @@
             </a>
             <center><p>or</p></center>
 
-            <div class="input-content">
-                <p>Email address</p>
-                <input type="email" name="email" class="btn input" placeholder="Email"> 
-            </div>
-            <div class="input-content">
-                <p>Password</p>
-                <input type="password" name="password" class="btn input" placeholder="*******">
-            </div>
-            <button type="submit" class="btn submit">Register</button>
+            <form action="">
+                <div class="input-content">
+                    <label for="email"><p>Email</p></label>
+                    <input type="email" name="email" class="btn input" placeholder="Email"> 
+                </div>
+                <div class="input-content">
+                    <label for="password"><p>Password</p></label>
+                    <input type="password" name="password" id="password" onkeyup="check();" class="btn input" placeholder="*******">
+                    <label for="confirmPw"><p>Confirm Password</p></label>
+                    <input type="password" name="confirmPw" id="confirmPw" onkeyup="checkMatch();" class="btn input" placeholder="*******">
+                </div>
+                <span id="msg"></span>
+                <button type="submit" class="btn submit"">Register</button>
+            </form>
         </div>
     </section>
+
+    <script src="./js/script.js" type="text/Javascript"></script>
 </body>
 </html>

@@ -55,6 +55,7 @@ a {
 
 .right h1 {
     font-weight: bold;
+    margin-top: -10px;
 }
 
 .right p {
@@ -100,6 +101,10 @@ a {
 
 .input-content .input {
     margin-top: -10px;
+}
+
+form span {
+    font-size: 2.2vh;
 }
 
 .submit {
