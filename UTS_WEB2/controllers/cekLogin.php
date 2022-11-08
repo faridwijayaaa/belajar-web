@@ -1,7 +1,7 @@
 <?php 
 
-session_start();
 include "../config/db.php";
+session_start();
 
 if((isset($_POST['username'])) && (isset($_POST['password']))) {
     $username = $_POST['username'];
@@ -24,7 +24,6 @@ if((isset($_POST['username'])) && (isset($_POST['password']))) {
             } else {
                 echo "access denied,";
             }
-            echo $hasil['id'] . " - " . $hasil['username'];
         }
     } else {
         echo "Login gagal. Periksa Username dan Password anda <br>";

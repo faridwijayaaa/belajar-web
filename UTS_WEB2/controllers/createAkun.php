@@ -8,7 +8,11 @@ $hak_akses = 2;
 if($username != "") {    
     $query_insert = "INSERT INTO tbuser (username, password, hak_akses) VALUES ('$username', '$password', '$hak_akses')";
     if ($connect_server->query($query_insert) === true) {
-        header('location:http://localhost:8000/views/login.php');
+        echo "<script> alert('Create account succesfully');
+                window.location.href = 'http://localhost:8000/views/login.php';
+
+            </script>";
+
     } else {
         echo "error" . $query_insert . "<br>" . $connect_server;
     }

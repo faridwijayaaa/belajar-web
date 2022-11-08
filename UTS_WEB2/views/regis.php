@@ -48,7 +48,7 @@
                         placeholder="*******">
                 </div>
                 <span id="msg"></span>
-                <button id='btnSubmit' type="submit" class="btn submit" onclick="">Register</button>
+                <button id='btnSubmit' type="submit" class="btn submit" disabled>Register</button>
             </form>
         </div>
     </section>
