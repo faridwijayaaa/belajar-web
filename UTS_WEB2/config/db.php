@@ -3,7 +3,7 @@
 // connect to db
 define('HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'Polopo.90');
+define('DB_PASS', '');
 define('DB_NAME', 'UTS_WEB_2');
 $connect_server = MySQLi_connect(HOST,DB_USER,DB_PASS);
 
